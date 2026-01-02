@@ -42,10 +42,15 @@ const App = () => {
   //   console.log(data)
   // }
 
+  function printProductData(data) {
+    console.log("i am inside APP.js")
+    console.log(data)
+  }
+
   return (
     <div>
       {/* <NewProduct pranay = {printProductData} /> */}
-      <NewProduct/>
+      <NewProduct printProduct={printProductData} />
       <Products items={products} />
     </div>
   );
